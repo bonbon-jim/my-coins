@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://cjbry27d0q6ve" path="res://scenes/player.tscn" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://c0r4kc2ktm6yh" path="res://scenes/coin.tscn" id="2_sugp2"]
-[ext_resource type="Script" uid="uid://12jgfmc5423t" path="res://scripts/coin.gd" id="3_sugp2"]
 [ext_resource type="Script" uid="uid://68ldq2l4ky0c" path="res://scripts/main.gd" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://67bknsdt4ue4" path="res://scenes/user_interface.tscn" id="4_tbgi4"]
 
 [sub_resource type="GDScript" id="GDScript_jyhfs"]
 script/source = "extends Timer
@@ -13,14 +13,13 @@ script/source = "extends Timer
 script = ExtResource("4_jyhfs")
 coin_scene = ExtResource("2_sugp2")
 
-[node name="Coin" parent="." instance=ExtResource("2_sugp2")]
-script = ExtResource("3_sugp2")
-
 [node name="Player" parent="." instance=ExtResource("1_0wfyh")]
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 autostart = true
 script = SubResource("GDScript_jyhfs")
+
+[node name="UserInterface" parent="." instance=ExtResource("4_tbgi4")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://67bknsdt4ue4"]
+
+[ext_resource type="Script" uid="uid://dph22g7cn4g8k" path="res://scripts/user_interface.gd" id="1_syvep"]
+
+[node name="Control" type="CanvasLayer" groups=["ui"]]
+script = ExtResource("1_syvep")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 57.0
+offset_top = 23.0
+offset_right = 319.0
+offset_bottom = 119.0
+theme_override_font_sizes/font_size = 70
+text = "Coins: 0"

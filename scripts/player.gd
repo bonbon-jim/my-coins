@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 400
+@export var speed = 800
 
 # this is a func. we have created
 func get_input():
