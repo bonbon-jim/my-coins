@@ -1,0 +1,9 @@
+{
+  "appid": "123",
+  "device_orientation": "portrait",
+  "export_template": "minigame.2d.tiny_4.4.zip",
+  "export_path": "F:\\Users\\Administrator\\Godot\\my-coins\\dist",
+  "export_perset": "Web",
+  "subpack_config": [],
+  "cdn_bucket": ""
+}
